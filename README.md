@@ -23,45 +23,34 @@ A simple, cross-platform Web Application Firewall (WAF) fingerprinting tool. It 
 py -m venv .venv
 . .\.venv\Scripts\Activate.ps1
 py -m pip install -U requests
+
 Linux/macOS (Bash)
-bash
-Copy code
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -U requests
+
 Usage
-Quick start (single target)
-bash
-Copy code
+Linux/macOS
 python3 firewall_detect.py example.com
-Windows shortcut
-powershell
-Copy code
+
+Windows
 py firewall_detect.py example.com
+
 Interactive menu
-bash
-Copy code
 python3 firewall_detect.py -i
+
 Batch scan from file
-Create targets.txt with one domain/IP/URL per line, then:
-
-bash
-Copy code
 python3 firewall_detect.py -F targets.txt
-Export reports (HTML + XML)
-Save reports to ./reports with timestamped names:
 
-bash
-Copy code
+Export reports (HTML + XML)
 python3 firewall_detect.py -F targets.txt -x
+
+
 Choose directory/name and auto-open in browser:
 
-bash
-Copy code
 python3 firewall_detect.py -F targets.txt -x -d reports -o myscan -r
 Selected options
-text
-Copy code
+
 -i, --menu               Interactive menu
 -F, --input-file FILE    Batch scan (one target per line)
 -x, --export             Write HTML + XML reports
@@ -76,8 +65,7 @@ Copy code
 -u, --user-agent STRING  Custom User-Agent
 -a, --aggressive         Extra probes to help trigger filtering
 Examples
-bash
-Copy code
+
 # Single target + export
 python3 firewall_detect.py https://example.com -x
 
@@ -94,8 +82,7 @@ XML: structured data for scripts/parsers
 Default location: ./reports/ with filename like wafscan_YYYYMMDD_HHMMSS
 
 Project structure
-text
-Copy code
+
 WAF_Detector/
 ├─ firewall_detect.py
 ├─ README.md
