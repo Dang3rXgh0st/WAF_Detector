@@ -20,9 +20,9 @@ pip and the requests library
 Installation
 
 Windows (PowerShell)
-#py -m venv .venv
-#. .\.venv\Scripts\Activate.ps1
-#py -m pip install -U requests
+py -m venv .venv
+. .\.venv\Scripts\Activate.ps1
+py -m pip install -U requests
 
 Linux/macOS (Bash)
 python3 -m venv .venv
@@ -31,6 +31,8 @@ python3 -m pip install -U requests
 
 Usage
 Quick start (single target)
+python3 firewall_detect.py example.com
+
 # Linux/macOS
 python3 firewall_detect.py example.com
 
@@ -93,6 +95,6 @@ WAF_Detector/
 ├─ requirements.txt
 ├─ LICENSE
 ├─ .gitignore
-├─ targets.txt          # optional
-└─ reports/             # created by -x
+├─ targets.txt          
+└─ reports/            
 
