@@ -20,6 +20,7 @@ A simple, cross-platform Web Application Firewall (WAF) fingerprinting tool. It 
 
 ### Windows (PowerShell)
 ```powershell
+
 py -m venv .venv
 . .\.venv\Scripts\Activate.ps1
 py -m pip install -U requests
