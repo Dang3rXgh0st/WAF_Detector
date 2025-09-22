@@ -102,3 +102,4 @@ WAF_Detector/
 ├─ .gitignore
 ├─ targets.txt          # optional
 └─ reports/             # created when you export (-x)
+
