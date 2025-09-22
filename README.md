@@ -5,29 +5,24 @@ A simple, cross-platform Web Application Firewall (WAF) fingerprinting tool. It 
 Version: 2.8 • Author: Dang3rXgh0st
 Note: Use legally and only with permission.
 
-Features
+Features:
+1.Single target or batch scanning from file
+2.Interactive menu mode
+3.Optional “aggressive” probes to help trigger filtering
+4.Virtual-host testing with custom Host header
+5.Export pretty HTML and machine-readable XML reports
 
-Single target or batch scanning from file
-
-Interactive menu mode
-
-Optional “aggressive” probes to help trigger filtering
-
-Virtual-host testing with custom Host header
-
-Export pretty HTML and machine-readable XML reports
-
-Requirements
+Requirements:
 
 Python 3.8+
-
 pip and the requests library
 
 Installation
+
 Windows (PowerShell)
-py -m venv .venv
-. .\.venv\Scripts\Activate.ps1
-py -m pip install -U requests
+#py -m venv .venv
+#. .\.venv\Scripts\Activate.ps1
+#py -m pip install -U requests
 
 Linux/macOS (Bash)
 python3 -m venv .venv
