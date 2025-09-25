@@ -25,7 +25,8 @@ py -m venv .venv
 . .\.venv\Scripts\Activate.ps1
 py -m pip install -U requests
 
-```Linux/macOS (Bash)
+```
+### Linux/macOS (Bash)
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -U requests
