@@ -27,28 +27,34 @@ py -m pip install -U requests
 
 ```
 ### Linux/macOS (Bash)
+  ```bash
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -U requests
-
-Usage
-Linux/macOS
+```
+### Usage
+# Linux/macOS
+```
 python3 firewall_detect.py example.com
-
-Windows
+```
+# Windows
+```
 py firewall_detect.py example.com
-
-Interactive menu
+```
+# Interactive menu
+```
 python3 firewall_detect.py -i
-
-Batch scan from file
+```
+#  Batch scan from file
+```
 python3 firewall_detect.py -F targets.txt
-
-Export reports (HTML + XML)
+```
+# Export reports (HTML + XML)
+```
 python3 firewall_detect.py -F targets.txt -x
+```
 
-
-Choose directory/name and auto-open in browser:
+# Choose directory/name and auto-open in browser:
 
 python3 firewall_detect.py -F targets.txt -x -d reports -o myscan -r
 Selected options
@@ -69,11 +75,13 @@ Selected options
 Examples
 
 # Single target + export
+``` 
 python3 firewall_detect.py https://example.com -x
-
+```
 # Scan by IP but send Host: example.com
+```
 python3 firewall_detect.py http://203.0.113.10 -H example.com -x
-
+```
 # Force HTTP for a domain
 python3 firewall_detect.py example.com --force-scheme http
 Output
@@ -83,7 +91,7 @@ XML: structured data for scripts/parsers
 
 Default location: ./reports/ with filename like wafscan_YYYYMMDD_HHMMSS
 
-Project structure
+``` Project structure
 
 WAF_Detector/
 ├─ firewall_detect.py
@@ -93,3 +101,4 @@ WAF_Detector/
 ├─ .gitignore
 ├─ targets.txt          # optional
 └─ reports/             # created when you export (-x)
+```
